@@ -260,10 +260,41 @@
     </script>
     <div class="table-display">
         <div class="table-cell-display">
+            
             <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+ 
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+  <a class="navbar-brand" href="#">Navbar</a>
+
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="#">Features</a>
+      <a class="nav-item nav-link" href="#">Pricing</a>
+      <a class="nav-item nav-link disabled" href="#">Disabled</a>
+    </div>
+  </div>
+</nav>
                 <div class="index-grid">
+                    <!-- -------------------------- -->
+
+
+
+
+
+
+
+
+
+
+
+
+                    <!-- ---------------------------- -->
                     <div class="right-column">
+                        
                         <div class="header">
+
+                        
                             <a style="display: inherit" class="sliderBtns fadeInDown delay-2 animated" href="https://xtraclean-sa.com/#">
                                 <i class="far fa-eye xxxxxxxx"></i>
                                 <span class="xxxxxxxx" style="    font-size: initial; ">
