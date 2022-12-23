@@ -195,10 +195,7 @@
     <!-- Price Start -->
     <div class="price">
         <div class="container">
-            <div class="section-header text-center">
-
-                <h2>قائمة الأسعار</h2>
-            </div>
+        
             <div class="row" >
                 <div class="col-md-4" style='margin:0 140px' >
                     <div class="price-item">
