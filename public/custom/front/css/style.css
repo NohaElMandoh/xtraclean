@@ -262,9 +262,11 @@ a:focus {
 
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active {
+    color: black;
+}
+.navbar-dark .navbar-nav .nav-link:hover{
     color: white;
 }
-
 .nav-bar .dropdown-menu {
     margin-top: 0;
     border: 0;
@@ -314,9 +316,9 @@ a:focus {
 .carousel {
     position: relative;
     width: 100%;
-    min-height: 400px;
+    min-height: 200px;
     background: #ffffff;
-    margin-bottom: 45px;
+    /* margin-bottom: 45px; */
 }
 
 .carousel .container-fluid {
@@ -326,10 +328,10 @@ a:focus {
 .carousel .carousel-item {
     position: relative;
     width: 100%;
-    min-height: 400px;
+    min-height: 200px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     flex-direction: column;
 }
 
@@ -603,7 +605,7 @@ a:focus {
     position: relative;
     width: 100%;
     max-width: 700px;
-    margin: 0 auto 45px auto;
+    margin: 0 auto 15px auto;
 }
 
 .section-header p {
@@ -668,18 +670,18 @@ a:focus {
 .about {
     position: relative;
     width: 100%;
-    padding: 45px 0 15px 0;
+    padding: 25px 0 15px 0;
 }
 
 .about .section-header {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     margin-left: 0;
 }
 
 .about .about-img img {
     width: 100%;
     border-radius: 5px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .about .about-content {
@@ -709,7 +711,7 @@ a:focus {
 .service {
     position: relative;
     width: 100%;
-    padding: 45px 0 0 0;
+    padding: 15px 0 0 0;
 }
 
 .service .service-item {
@@ -717,7 +719,7 @@ a:focus {
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin-bottom: 45px;
+    margin-bottom: 15px;
 }
 
 .service .service-item i {
@@ -811,7 +813,7 @@ a:focus {
 .price {
     position: relative;
     width: 100%;
-    padding: 45px 0 15px 0;
+    padding: 15px 0 15px 0;
 }
 
 .price .row {
@@ -824,7 +826,7 @@ a:focus {
 
 .price .price-item {
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     background: #ffffff;
     border-radius: 5px;
     text-align: center;
@@ -1926,7 +1928,7 @@ a:focus {
 /*******************************/
 .footer {
     position: relative;
-    margin-top: 45px;
+    /* margin-top: 45px; */
     padding-top: 90px;
     background: #202C45;
 }
@@ -2037,7 +2039,7 @@ a:focus {
 .footer .copyright {
     text-align: center;
     padding-top: 15px;
-    padding-bottom: 45px;
+    padding-bottom: 15px;
 }
 
 .footer .copyright p {
