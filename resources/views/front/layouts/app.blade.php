@@ -23,6 +23,132 @@
 
     <!-- Template Stylesheet -->
     <link href="{{asset('custom/front/css/style.css')}}" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="{{asset('custom/front/slick/slick.css')}}"/>
+<!-- // Add the new slick-theme.css if you want the default styling -->
+<link rel="stylesheet" type="text/css" href="{{asset('custom/front/slick/slick-theme.css')}}"/>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <style>
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            font-family: Verdana, sans-serif;
+            margin: 0
+        }
+
+        .mySlides {
+            display: none
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+
+        /* Next & previous buttons */
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Caption text */
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active,
+        .dot:hover {
+            background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+
+            .prev,
+            .next,
+            .text {
+                font-size: 11px
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -73,7 +199,7 @@
                         <a href="#" class="nav-item nav-link">خدماتنا</a>
                         <a href="#" class="nav-item nav-link">حجز موعد </a>
                         <a href="#" class="nav-item nav-link active">الرئيسية</a>
-                       
+
                     </div>
                     <!-- <div class="ml-auto">
                             <a class="btn btn-custom" href="">ِAdmin</a>
@@ -92,11 +218,11 @@
 
     <!-- Carousel Start -->
     <div class="carousel">
-        <div class="container-fluid" >
-            <div class="owl-carousel" >
+        <div class="container-fluid">
+            <div class="owl-carousel">
                 <div class="carousel-item">
-                    <div class="carousel-img" >
-                        <img  src="{{asset('custom/front/img/carousel-1.jpg')}}" alt="Image">
+                    <div class="carousel-img">
+                        <img src="{{asset('custom/front/img/carousel-1.jpg')}}" alt="Image">
                     </div>
 
                 </div>
@@ -195,16 +321,16 @@
     <!-- Price Start -->
     <div class="price">
         <div class="container">
-        
-            <div class="row" >
-                <div class="col-md-4" style='margin:0 140px' >
+
+            <div class="row">
+                <div class="col-md-4" style='margin:0 140px'>
                     <div class="price-item">
                         <img style='width:100%' src=" {{asset('custom/front/img/price2.jfif')}}">
 
                     </div>
                 </div>
-             
-                <div class="col-md-4" >
+
+                <div class="col-md-4">
                     <div class="price-item">
                         <img style='width:100%' src=" {{asset('custom/front/img/price1.jfif')}}">
                     </div>
@@ -213,15 +339,15 @@
 
             </div>
 
-            <div class="row"  style='margin-top:5px' >
-                <div class="col-md-4" style='margin:0 140px' >
+            <div class="row" style='margin-top:5px'>
+                <div class="col-md-4" style='margin:0 140px'>
                     <div class="price-item">
                         <img style='width:100% ' src=" {{asset('custom/front/img/price4.jfif')}}">
 
                     </div>
                 </div>
-               
-                <div class="col-md-4" >
+
+                <div class="col-md-4">
                     <div class="price-item">
                         <img style='width:100% ' src=" {{asset('custom/front/img/price3.jfif')}}">
                     </div>
@@ -254,12 +380,12 @@
                 <div>
                     <div class="service-item">
 
-                       
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                          <path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z" />
-                            </svg>
-                            Tiktok
-                  
+
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z" />
+                        </svg>
+                        Tiktok
+
 
                     </div>
                 </div>
@@ -283,10 +409,15 @@
         </div>
     </div>
     <!-- Service End -->
+    <div class="footer_slider" style="width: 800px ;margin-left:25%">
+        <div> <img src="{{ asset('front/image/4732_1649878766_14919.png')}}" style="width: 100% ;" /></div>
+        <div><img src="{{ asset('front/image/4732_1649878920_14962.png')}}"  style="width: 100% ;"/></div>
+        <div> <img src="{{ asset('front/image/4732_1649888587_14965.png')}}"  style="width: 100% ;"></div>
+    </div>
 
+    
 
-
-
+   
 
 
 
@@ -321,6 +452,50 @@
 
     <!-- Template Javascript -->
     <script src="{{asset('custom/front/js/main.js')}}"></script>
+    <script src="{{ asset('front/js/single_custom.js.download')}}"></script>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="{{asset('custom/front/slick/slick.min.js')}}"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script>
+
+$(document).ready(function(){
+    $('.footer_slider').slick({
+        dots: true,
+  infinite: true,
+  speed: 100,
+  fade: true,
+  cssEase: 'linear'
+});
+});
+
+	
+
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 6000); // Change image every 2 seconds
+        }
+    </script>
+
 </body>
 
 </html>
