@@ -29,5 +29,9 @@ class HomeController extends Controller
     {
         return view('front.contactUs');
     }
+    public function services()
+    {
+        return view('front.services');
+    }
     
 }

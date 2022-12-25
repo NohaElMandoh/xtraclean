@@ -191,14 +191,17 @@
                         <a href="#" class="nav-item nav-link "> </a>
                         <a href="#" class="nav-item nav-link "> </a>
                         <a href="#" class="nav-item nav-link "> </a>
-                        <a href="#" class="nav-item nav-link ">عن الموقع </a>
+                        <a href="#" class="nav-item nav-link "> </a>
+                        <a href="#" class="nav-item nav-link "> </a>
 
-                        <a href="#" class="nav-item nav-link ">أراء الزبائن </a>
+                        <!-- <a href="#" class="nav-item nav-link ">عن الموقع </a> -->
+
+                        <!-- <a href="#" class="nav-item nav-link ">أراء الزبائن </a> -->
 
                         <a href="{{route('contactUs')}}" class="nav-item nav-link ">تواصل معنا</a>
-                        <a href="#" class="nav-item nav-link">خدماتنا</a>
-                        <a href="#" class="nav-item nav-link">حجز موعد </a>
-                        <a href="#" class="nav-item nav-link active">الرئيسية</a>
+                        <a href="{{route('services')}}" class="nav-item nav-link">خدماتنا</a>
+                        <!-- <a href="#" class="nav-item nav-link">حجز موعد </a> -->
+                        <a href="{{route('home')}}" class="nav-item nav-link active">الرئيسية</a>
 
                     </div>
                     <!-- <div class="ml-auto">
