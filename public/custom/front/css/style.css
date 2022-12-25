@@ -555,12 +555,12 @@ a:focus {
 }
 
 .page-header a::after {
-    position: absolute;
+    position: inherit;
     content: "/";
     width: 8px;
     height: 8px;
     top: -2px;
-    right: -7px;
+    right: 14px;
     text-align: center;
     color: #ffffff;
 }
@@ -1361,6 +1361,7 @@ a:focus {
     align-items: center;
     justify-content: flex-start;
     margin-bottom: 30px;
+    justify-content: flex-end
 }
 
 .contact .contact-info-icon {
@@ -1380,7 +1381,7 @@ a:focus {
 }
 
 .contact .contact-info-text {
-    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .contact .contact-info-text h3 {
