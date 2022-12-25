@@ -26,9 +26,15 @@ Route::get('/', function () {
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/contactUs', [App\Http\Controllers\HomeController::class, 'contactUs'])->name('contactUs');
 Route::get('/services', [App\Http\Controllers\HomeController::class, 'services'])->name('services');
+Route::post('/contact_us_submit', [App\Http\Controllers\HomeController::class, 'contact_us_submit'])->name('contact_us_submit');
 
 
 
-Route::get('/admin', [App\Http\Controllers\AdminController::class, 'index'])->name('admin');
+// Route::get('/admin', [App\Http\Controllers\AdminController::class, 'index'])->name('admin');
 
 
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});

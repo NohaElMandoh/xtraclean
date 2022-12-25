@@ -7,7 +7,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free Website Template" name="keywords">
     <meta content="Free Website Template" name="description">
-
+    <meta name="csrf-token" content="{{ csrf_token() }}" />
     <!-- Favicon -->
     <link href="{{asset('custom/front/img/favicon.ico')}}" rel="icon">
 
@@ -177,7 +177,7 @@
                 <a href="#" class="navbar-brand">MENU</a>
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav mr-auto" style="font-size:20px">
-                        <a href="{{route('admin')}}" class="nav-item nav-link ">مدير الموقع </a>
+                        <a href="" class="nav-item nav-link ">مدير الموقع </a>
                         <a href="#" class="nav-item nav-link "> </a>
                         <a href="#" class="nav-item nav-link "> </a>
                         <a href="#" class="nav-item nav-link "> </a>
@@ -297,7 +297,7 @@ $(document).ready(function(){
             setTimeout(showSlides, 6000); // Change image every 2 seconds
         }
     </script>
-
+@yield('scripts')
 </body>
 
 </html>

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Contact;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -33,5 +34,24 @@ class HomeController extends Controller
     {
         return view('front.services');
     }
-    
+    public function contact_us_submit(Request $request)
+    {
+     
+        $request->validate([
+            'name'      => 'required|string|max:255',
+            'email'     => 'required|string|max:255',
+            'message'     => 'required|string|max:255',
+          
+        ]);
+        $input = $request->all();
+
+        $saved = Contact::create($input);
+
+        if ($saved) {
+
+            return response()->json(['message' => 'Success!']);
+        } else {
+            return response()->json(['message' => 'Error!']);
+        }
+    }
 }
